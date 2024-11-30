@@ -18,86 +18,58 @@
     }
 }
 
-/* Whole Table Style */
-table{
+.grid-container{
     background-color: black;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-row-gap: 5%;
+    grid-column-gap: 2%;  
 }
-/* Rows Style*/
-.row{
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 333px;
-}
-
-
-
-
-/* Buttons */
-.button{
-    background-color: red;
-    opacity: 70%;
-
-    height: 180px;
-    width: 160px;
-    max-height: 190px;
-    max-width: 170px;
-    
-    padding: 2px;
-    border-radius: 10px;
+.grid-item{
+    background-image: linear-gradient(to top, black , red);
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-self: center;
+    align-self: center;
 
-    /* When hovering over each button the button pops out*/
+    height: 192px;
+    width: auto;
+
+    border-radius: 6px;
+    border: 1px groove red;
+
+    opacity: 80%;
+
     &:hover{
         opacity: 100%;
-        height: 190;
-        width: auto;
+        height: 200px;
+        width: 200px;
     }
 }
-button{
-    background-color: transparent;
-    border: none;
-}
+
 a{
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-image: linear-gradient(to top, black , rgb(204, 2, 2));
-    border-radius: 10px;
-
+    height: inherit;
+    width: inherit;
 }
 
 /* Images */
-.img{
-    width: 80%;
-    height: auto;
+.logo{
     border-radius: 5px;
+
+    margin: 10px;
+
+    height: auto;
+    min-width: 80%;
+    width: 100%;
+}
+#w3school{
+    max-width: 170px;
 }
 #google{
     border-radius: 90px;
-}
-#youtube{
-    border-radius: 25px;
-}
-#google{
-    border-radius: 2px;
-}
-
-/* Changes the height of the buttons on phones. */
-@media screen and (max-width: 480px){
-    button{
-        height: 1.5in;
-    }
-
 }
