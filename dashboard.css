@@ -19,10 +19,6 @@ section{
     margin-top: 1cm !important;
 }
 
-/* Images */
-#w3school{
-    height: 90%;
-}
 
 /* Buttons */
 #btn{
@@ -31,13 +27,16 @@ section{
 button{
     opacity: 70%;
     height: 2in;
-    max-width: 100%;
+    width: 2in;
     padding: 6%;
     /* When hovering over each button the button pops out*/
     &:hover{
         opacity: 100%;
-        padding: 10px 30px;
+        width: 200px;
     }
+}
+img{
+    
 }
 
 /* Changes the height of the buttons on phones. */
@@ -49,7 +48,7 @@ button{
 }
 
 /* To-Do CSS */
-legend{
+/* legend{
     text-align: left;
     margin-left: 30px;
 }
@@ -75,4 +74,4 @@ input[type='submit'], button, [aria-label]{
     max-width: 80%;
     margin: auto;
     margin-top: 10px;
-}
+} */
